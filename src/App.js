@@ -39,15 +39,13 @@ console.log(Exp)
    
    <div className='container-fluid bg-light'>
 <div className="row">
-<div className="col-6">
+<div className="col-4">
    <PersonalD />
   
 
    <Experience 
   handleChange = {handleChange}
-
   /> 
-
 
   </div>
   <div className="col-6">
@@ -55,10 +53,7 @@ console.log(Exp)
 <FinalCV />
 
     </div>
-  </div>
-
-  
-    
+  </div>    
   </div>
    </div>  
 
