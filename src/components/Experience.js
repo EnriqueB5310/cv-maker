@@ -1,25 +1,14 @@
 import React from 'react'
-import { useState } from 'react'
 
-function Experience() {
-  
-    const [Experience, setExp] = useState(
-        {Position: "", Company: "", City: "", From: "", To: ""}
-    )
-  
-console.log(Experience)
 
-    function handleChange(event) {
-        setExp(prevExp => {
-            
-            return {
-                ...prevExp,
-                [event.target.name]: event.target.value
-            }
-
-        })
-    }
+function Experience({handleChange}) {
   
+   
+    
+  
+
+
+    
     return (
  
 
