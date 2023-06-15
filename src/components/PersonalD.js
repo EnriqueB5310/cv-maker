@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PersonalD() {
+function PersonalD({handleChange}) {
   return (
   
     <form>

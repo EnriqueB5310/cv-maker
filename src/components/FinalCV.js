@@ -1,8 +1,12 @@
  import React from 'react'
  
- function FinalCV(props) {
+ function FinalCV({Position, Company, City, From, To}) {
    return (
-     <div>FinalCV</div>
+     <div>
+      {Position} 
+      {Company}
+     
+     </div>
    )
  }
  

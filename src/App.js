@@ -40,7 +40,9 @@ console.log(Exp)
    <div className='container-fluid bg-light'>
 <div className="row">
 <div className="col-4">
-   <PersonalD />
+   <PersonalD 
+   handleChange= {handleChange}
+   />
   
 
    <Experience 
@@ -50,7 +52,15 @@ console.log(Exp)
   </div>
   <div className="col-6">
 
-<FinalCV />
+<FinalCV
+
+Company = {Exp.Company}
+Position = {Exp.Position}
+City = {Exp.City}
+From = {Exp.from}
+To = {Exp.To}
+
+/>
 
     </div>
   </div>    
