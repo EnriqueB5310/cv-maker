@@ -16,6 +16,12 @@ function App() {
     {FirstName: "", LastName: "", Address: "", Email: "", Description: "", Position: "", Company: "", City: "", From: "", To: "",}
   
   )
+
+  const [count, setCount] = useState(0)
+
+
+
+
   
   function handleChange(event) {
     setExp(prevExp => {
@@ -68,8 +74,14 @@ To = {Exp.To}
 />
 
     </div>
-  </div>    
+  </div> 
+  <button  onClick={() => setCount(count +1)}>Add Exp</button> 
+  { [...Array(count)].map((t,i) => <Experience handleChange={handleChange} />)} {/* adds compent */}
+
   </div>
+
+
+
    </div>  
 
 
