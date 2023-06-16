@@ -13,7 +13,7 @@ function App() {
 
  
   const [Exp, setExp] = useState(
-    {Position: "", Company: "", City: "", From: "", To: ""}
+    {FirstName: "", LastName: "", Address: "", Email: "", Description: "", Position: "", Company: "", City: "", From: "", To: "",}
   
   )
   
@@ -40,6 +40,7 @@ console.log(Exp)
    <div className='container-fluid bg-light'>
 <div className="row">
 <div className="col-4">
+   
    <PersonalD 
    handleChange= {handleChange}
    />
@@ -53,11 +54,15 @@ console.log(Exp)
   <div className="col-6">
 
 <FinalCV
-
+FirstName = {Exp.FirstName}
+LastName = {Exp.LastName}
+Address = {Exp.Address}
+Email = {Exp.Email}
+Description = {Exp.Description}
 Company = {Exp.Company}
 Position = {Exp.Position}
 City = {Exp.City}
-From = {Exp.from}
+From = {Exp.From}
 To = {Exp.To}
 
 />
