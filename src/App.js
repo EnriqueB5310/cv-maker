@@ -55,7 +55,10 @@ console.log(Exp)
    <Experience 
   handleChange = {handleChange}
   /> 
-
+<button  onClick={() => setCount(count +1)}>Add Exp</button> 
+  <button onClick={() => setCount(count - 1)}>Delete Exp</button>
+  { [...Array(count)].map((t,i) => <Experience handleChange={handleChange} />)} {/* adds compent */}
+  
   </div>
   <div className="col-6">
 
@@ -75,8 +78,7 @@ To = {Exp.To}
 
     </div>
   </div> 
-  <button  onClick={() => setCount(count +1)}>Add Exp</button> 
-  { [...Array(count)].map((t,i) => <Experience handleChange={handleChange} />)} {/* adds compent */}
+ 
 
   </div>
 
