@@ -45,7 +45,7 @@ console.log(Exp)
    
    <div className='container-fluid bg-light'>
 <div className="row">
-<div className="col-4">
+<div className="col-sm-4">
    
    <PersonalD 
    handleChange= {handleChange}
@@ -60,7 +60,7 @@ console.log(Exp)
   { [...Array(count)].map((t,i) => <Experience handleChange={handleChange} />)} {/* adds compent */}
   
   </div>
-  <div className="col-6">
+  <div className="col-sm-6">
 
 <FinalCV
 FirstName = {Exp.FirstName}
